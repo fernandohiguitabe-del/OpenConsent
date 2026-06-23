@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔒 Mi Privacidad"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#01696f"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestiona tus preferencias de privacidad. Los cambios se aplican de inmediato."
+            android:textSize="13sp"
+            android:textColor="#7a7974"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- OBLIGATORIAS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔒 Cookies obligatorias"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#01696f"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#F0F5F4"
+            android:padding="12dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sesión y autenticación"
+                android:textSize="13sp"
+                android:textColor="#28251d"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● Activo"
+                android:textSize="12sp"
+                android:textColor="#437a22"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Las cookies obligatorias no pueden desactivarse."
+            android:textSize="11sp"
+            android:textColor="#7a7974"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- OPCIONALES -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Cookies opcionales"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#28251d"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Analytics -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📊 Analytics"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#28251d"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mejora tu experiencia midiendo el uso de la app"
+                    android:textSize="11sp"
+                    android:textColor="#7a7974"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchAnalytics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- Marketing -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎯 Marketing"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#28251d"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recomendaciones personalizadas de películas"
+                    android:textSize="11sp"
+                    android:textColor="#7a7974"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchMarketing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- Guardar -->
+        <Button
+            android:id="@+id/btnOnlyRequired"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="Solo obligatorias y continuar"
+            android:textSize="14sp"
+            android:backgroundTint="#C8D8D6"
+            android:textColor="#7a7974"
+            android:stateListAnimator="@null"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDD"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Revocar todo -->
+        <Button
+            android:id="@+id/btnRevokeAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Revocar todo y salir"
+            android:backgroundTint="#a12c7b"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

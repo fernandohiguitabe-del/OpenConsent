@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎬 CineApp"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#E50914"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tu privacidad, tu decisión"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#28251d"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Antes de continuar necesitamos tu consentimiento para el tratamiento de tus datos personales, conforme al GDPR — Reglamento EU 2016/679."
+            android:textSize="13sp"
+            android:textColor="#555555"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- OBLIGATORIAS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F0F5F4"
+            android:padding="14dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/headerObligatorio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🔒 Cookies obligatorias"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#01696f"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="● Siempre activas"
+                    android:textSize="11sp"
+                    android:textColor="#437a22"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/arrowObligatorio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  ▼"
+                    android:textColor="#01696f"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Necesarias para el funcionamiento básico. No pueden desactivarse."
+                android:textSize="12sp"
+                android:textColor="#555555"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/detailObligatorio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ejemplos de datos almacenados:\n• Identificador de sesión activa\n• Preferencias de idioma\n• Token de autenticación\n• Estado de reproducción del video"
+                    android:textSize="12sp"
+                    android:textColor="#28251d"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ℹ️ Base legal: Art. 6.1.b GDPR — ejecución del contrato"
+                    android:textSize="11sp"
+                    android:textColor="#01696f"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ANALYTICS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FDF8F5"
+            android:padding="14dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/headerAnalytics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="📊 Analytics (opcional)"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#964219"/>
+
+                <TextView
+                    android:id="@+id/arrowAnalytics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▼"
+                    android:textColor="#964219"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mejora tu experiencia midiendo cómo usas la app."
+                android:textSize="12sp"
+                android:textColor="#555555"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/detailAnalytics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ejemplos de datos almacenados:\n• Películas que visualizaste\n• Tiempo de uso por sesión\n• Pantallas visitadas\n• Errores técnicos de la app"
+                    android:textSize="12sp"
+                    android:textColor="#28251d"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ℹ️ Base legal: Art. 6.1.a GDPR — consentimiento del interesado"
+                    android:textSize="11sp"
+                    android:textColor="#01696f"/>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cbAnalytics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acepto el uso de cookies de Analytics"
+                android:textColor="#28251d"
+                android:textSize="13sp"
+                android:checked="false"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!-- MARKETING -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FDF5FA"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:id="@+id/headerMarketing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🎯 Marketing (opcional)"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#a12c7b"/>
+
+                <TextView
+                    android:id="@+id/arrowMarketing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▼"
+                    android:textColor="#a12c7b"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recomendaciones personalizadas de películas."
+                android:textSize="12sp"
+                android:textColor="#555555"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/detailMarketing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ejemplos de datos almacenados:\n• Géneros de películas favoritos\n• Historial de búsquedas\n• Valoraciones y listas\n• Dispositivo y ubicación aproximada"
+                    android:textSize="12sp"
+                    android:textColor="#28251d"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ℹ️ Base legal: Art. 6.1.a GDPR — consentimiento del interesado"
+                    android:textSize="11sp"
+                    android:textColor="#01696f"/>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cbMarketing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acepto el uso de cookies de Marketing"
+                android:textColor="#28251d"
+                android:textSize="13sp"
+                android:checked="false"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!-- DERECHOS GDPR desplegable -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F0F0F0"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:id="@+id/headerDerechos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="⚖️ Mis derechos GDPR"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#28251d"/>
+
+                <TextView
+                    android:id="@+id/arrowDerechos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▼"
+                    android:textColor="#28251d"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detailDerechos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Art. 15 — Acceso: solicitar qué datos tenemos sobre ti.\n• Art. 16 — Rectificación: corregir datos incorrectos.\n• Art. 17 — Supresión: solicitar el borrado de tus datos.\n• Art. 7.3 — Retirada: revocar en cualquier momento desde el candado 🔒.\n• Reclamación ante la autoridad de control competente.\n\nContacto: privacidad@cineapp.demo"
+                    android:textSize="12sp"
+                    android:textColor="#28251d"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- BOTONES -->
+        <Button
+            android:id="@+id/btnAcceptAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✓ Aceptar seleccionadas y continuar"
+            android:backgroundTint="#01696f"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnRejectOptional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solo obligatorias y continuar"
+            android:backgroundTint="#7a7974"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

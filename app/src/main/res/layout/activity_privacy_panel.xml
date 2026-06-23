@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA">
+
+    <!-- BARRA SUPERIOR CON BOTONES -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:padding="8dp"
+        android:fitsSystemWindows="true"
+        android:clickable="false"
+        android:focusable="false">
+
+        <Button
+            android:id="@+id/btnSwitchUser"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="👤 Usuario"
+            android:textSize="13sp"
+            android:backgroundTint="#01696f"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:stateListAnimator="@null"
+            android:elevation="8dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Button
+            android:id="@+id/btnSwitchAdmin"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="🛡️ Admin"
+            android:textSize="13sp"
+            android:backgroundTint="#C8D8D6"
+            android:textColor="#7a7974"
+            android:layout_marginStart="4dp"
+            android:stateListAnimator="@null"
+            android:elevation="8dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+    <!-- CONTENEDOR DE FRAGMENTOS -->
+    <FrameLayout
+        android:id="@+id/privacyFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
